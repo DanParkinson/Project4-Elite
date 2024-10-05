@@ -168,4 +168,35 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 
 ![Site Wireframes](docs/wireframes/Wireframe-menu-page.png)
 
-</details> 
+</details>
+
+## Features
+### Design Features
+### Existing Features
+### Future Adaptations
+
+## Issues and Bugs
+
+## Technologies Used
+### Main Languages Used
+### Frameworks, Libraries & Programs Used
+
+## Testing
+Refer to [TESTING.md](TESTING.md) for details on manual and automated testing.
+- manual testing
+- automated testing
+- Lighthouse site performance checks
+- linter checks on HTML, CSS, JavaScript and Python code
+
+## Deployment
+This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
+
+## Credits
+### Content
+- balsamiq for wireframes 
+- DrawSQL for database design 
+### People
+
+## Acknowledgements
+
+[Back to top](#README)
