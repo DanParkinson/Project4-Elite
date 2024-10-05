@@ -135,3 +135,37 @@ As per assessment criteria, this project must utilise CRUD functionality.  This 
 | **Overall Score**                           | **36**     | **40**      |
     
 The above exercise indicates that overall importance/feasibility scores were similar.  Therefore the project should be deliverable.
+
+### Colour Schema 
+
+### Database Design 
+Entity Relationship Diagrams help to visualise database architecture before creating models in Django.  Understanding the relationships between different tables can save time recoding later in the project.
+
+<details>
+<summary>Entity Relationship Diagram</summary>
+
+![Database Plan](docs/basesql-database.png)
+
+</details>
+
+#### Skeleton
+Wireframes were made to showcase the appearance of the site pages while keeping a positive user experience in mind. The wireframes were created using a desktop version of [Balsamiq](https://balsamiq.com/).
+
+<details>
+<summary>Balsamiq Wireframes</summary>
+
+![Site Wireframes](docs/wireframes/wireframe-index-page.png)
+
+![Site Wireframes](docs/wireframes/wireframe-sign-up-page.png)
+
+![Site Wireframes](docs/wireframes/wireframe-account-page.png)
+
+![Site Wireframes](docs/wireframes/wireframe-create-reservation-page.png)
+
+![Site Wireframes](docs/wireframes/wireframe-user-reservations-page.png)
+
+![Site Wireframes](docs/wireframes/wireframe-admin-bookings-page.png)
+
+![Site Wireframes](docs/wireframes/Wireframe-menu-page.png)
+
+</details> 
