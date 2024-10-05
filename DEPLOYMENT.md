@@ -13,3 +13,7 @@ The linked repo template from the [Code Institute](https://github.com/Code-Insti
 *Django*, a full stack framework will support this project.
 
 To install, type *pip3 install Django~=4.2.1* into the Gitpod terminal.
+
+![Django installed](docs/local_deployment/ld-01-install-django.png)
+
+Use command *pip3 freeze --local > requirements.txt* to create requirements.txt and add relavent packages to it. 
