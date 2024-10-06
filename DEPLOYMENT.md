@@ -35,6 +35,12 @@ Add to allowed hosts in *elite-cuisine/settings.py*
 
 In the terminal, type *python3 manage.py runserver* to verify local deployment. A message to open a page in the browser pops up using port 8000.
 
-![Allowed hosts added](docs/local_deployment/cp-04-succesful-server.png)
+![Successful server response](docs/local_deployment/cp-04-succesful-server.png)
+
+# Create home app
+
+In the terminal, type *python3 manage.py startapp home* to create out homepage app.
+
+![Home app created](docs/local_deployment/ca-01-create-home-app.png)
 
 
