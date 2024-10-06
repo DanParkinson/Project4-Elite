@@ -5,6 +5,7 @@ The linked repo template from the [Code Institute](https://github.com/Code-Insti
 
 1. Install Django 4.2.1 with required packages
 2. Create a new Django project
+3. Create home app
 3. Set up project to use PostgreSQL and Cloudinary
 4. Deploy project to Heroku
 
