@@ -19,3 +19,15 @@
 - List and link technologies used in readme
 
 - Learn to use GitHub projects. Create user stories
+
+
+I would like to deploy to Heroku at this point but My authenticator is not working. So I have decided to begin phase 2 of my planning.
+
+## Phase 2
+
+Focus here is to do with setting up templates to have a view of the home page.
+
+- Setup base.html
+- create separate components for site such as head, header, navbar, footer in a subfolder to inject into base.html
+- Setup index page in home app
+- Build navigation
