@@ -26,3 +26,19 @@ Add the following code to the *elite_cuisine/settings.py* file to installed apps
 Use command *python3 manage.py runserver* to check the home app is linked correctly.
 
 ![Succesful server](docs/testing/ca-04-succesful-server.png)
+
+Update the *home/views.py* file.
+
+![Updated home/views.py](docs/testing/temp-01-home-views.png)
+
+Create and update the *home/urls.py* file.
+
+![Updated home/urls.py](docs/testing/temp-02-home-urls.png)
+
+Update the *elite_cuisine/urls.py* file.
+
+![Updated elite_cuisine/urls.py](docs/testing/temp-03-elite-cuisine-urls.png)
+
+Run server using command *python3 manage.py runserver* to view that urls route is correct. Error syaing *templates does not exist* shows route is correct.
+
+![templates does not exist error message in server](docs/testing/temp-04-template-dosent-exist.png)
