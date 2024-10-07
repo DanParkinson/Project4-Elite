@@ -42,3 +42,15 @@ Update the *elite_cuisine/urls.py* file.
 Run server using command *python3 manage.py runserver* to view that urls route is correct. Error syaing *templates does not exist* shows route is correct.
 
 ![templates does not exist error message in server](docs/testing/temp-04-template-dosent-exist.png)
+
+elite_cuisine/settings.py needs updatinf with templates DIR.
+
+![templates dir](docs/testing/temp-05-templates_dir.png)
+
+![templates route](docs/testing/temp-06-templates-route.png)
+
+After creating the base.html, partial htmls and index.html in the templates directory. The server now responds with index.html. 
+
+![templates directory](docs/testing/temp-07-templates.png)
+
+![Server showing index.html](docs/testing/temp-08-basehtml-works.png)
