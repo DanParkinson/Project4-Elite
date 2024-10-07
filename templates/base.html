@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/head.html' %}
+</head>
+<body>
+    <header>
+    {% include 'partials/header.html' %}
+    {% include 'partials/nav.html' %}
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Child templates will insert their content here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+    {% include 'partials/footer.html' %}
+    </footer>
+</body>
+</html>
