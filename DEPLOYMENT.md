@@ -122,4 +122,16 @@ Using the terminal command *python3 manage.py migrate*, create a database.
 
 ![First-migration terminal response](docs/local_deployment/post-06-first-migrate.png)
 
-Create a superuser using djangos built in admin and auth apps using temrinal command *python3 manage.py createsuperuser*
+Create a superuser using djangos built in admin and auth apps using temrinal command *python3 manage.py createsuperuser*.
+
+![superuser created](docs/local_deployment/superuser-01.png)
+
+# Connect Heroku to postgreSQL
+
+Deploy a new branch in Heroku.
+
+![Heroku deploy button](docs/local_deployment/post-07-deploy.png)
+
+Create a new convig-var using the name DATABASE-URL and a value of your postgreSQL. This connects Heroku to the postgreSQL.
+
+![Convig-var postgreSQL](docs/local_deployment/post-08-config-vars-postgresql.png)
