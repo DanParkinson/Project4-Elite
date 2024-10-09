@@ -114,4 +114,12 @@ in the elite_cuisine/settings.py file, disconnect the splite database by comment
 
 Use dj-databse-url to connect.
 
-![Sdj-databse-url connection](docs/local_deployment/post-05-dj-databse-url.png)
+![dj-databse-url connection](docs/local_deployment/post-05-dj-databse-url.png)
+
+# Create superuser
+
+Using the terminal command *python3 manage.py migrate*, create a database.
+
+![First-migration terminal response](docs/local_deployment/post-06-first-migrate.png)
+
+Create a superuser using djangos built in admin and auth apps using temrinal command *python3 manage.py createsuperuser*
