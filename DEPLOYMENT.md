@@ -36,9 +36,17 @@ Use command *pip3 freeze --local > requirements.txt* to create requirements.txt 
 
 ![Whitenoise installed](docs/heroku_deployment/hd-09-whitenoise.png)
 
+# Install Psycopg2 and dj-database-url
+
+To install, type *pip3 install dj_database_url~=0.5 psycopg2~=2.9* into the Gitpod terminal.
+
+Use command *pip3 freeze --local > requirements.txt* to create requirements.txt and add relavent packages to it.
+
+![pyscopg2 and dj_databse_url installed](docs/local_deployment/post-01-requirements.png)
+
 # Create Django Project
 
-Using the command *django-admin startproject elite-cuisine* creates our django project
+Using the command *django-admin startproject elite-cuisine* creates our django project.
 
 ![elite-cuisine created](docs/local_deployment/cp-01-elite-cuisine-project.png)
 
@@ -62,34 +70,48 @@ In the terminal, type *python3 manage.py startapp home* to create out homepage a
 
 # Deploy to Heroku 
 
-Navigate to your Heroku dashboard and create a new Heroku app
+Navigate to your Heroku dashboard and create a new Heroku app.
 
 ![Create Heroku App](docs/heroku_deployment/hd-01-create-app.png)
 
-Add *DISABLE_COLLECTSTATIC* with a Value of 1 to stop Heroku uploading static files
+Add *DISABLE_COLLECTSTATIC* with a Value of 1 to stop Heroku uploading static files.
 
 ![Edit Config Vars](docs/heroku_deployment/hd-02-config-vars.png)
 
-Create a Procfile to allow Heroku to deploy using Gunicorn
+Create a Procfile to allow Heroku to deploy using Gunicorn.
 
 ![Created Procfile](docs/heroku_deployment/hd-04-procfile.png)
 
-Add Heroku to allowed hosts in elite_cuisine/settings.py
+Add Heroku to allowed hosts in elite_cuisine/settings.py.
 
 ![Append Heroku to Allowed Hosts](docs/heroku_deployment/hd-05-allowed-hosts.png)
 
-Connect Heroku to your Github account
+Connect Heroku to your Github account.
 
 ![Connect Heroku to Github](docs/heroku_deployment/hd-06-heroku-github.png)
 
-Click deploy branch and wait for completion
+Click deploy branch and wait for completion.
 
 ![Deploy Branch](docs/heroku_deployment/hd-07-deploy-branch.png)
 
-Add Eco Dynos
+Add Eco Dynos.
 
 ![Add Eco Dynos](docs/heroku_deployment/hd-08-eco-dynos.png)
 
+# Connect PostgreSQL
 
+Create and env.py file in the top directory and use this code. The postgreSQL code was generated from Code Institute. It has been redacted from the image.
 
+![PostgreSQL code](docs/local_deployment/post-02-env.png)
 
+Use the following code to connect the env.py in the elite_cuisine/settings.py
+
+![env connected](docs/local_deployment/post-03-connect-env.png)
+
+in the elite_cuisine/settings.py file, disconnect the splite database by commenting out the code.
+
+![Splite commented out](docs/local_deployment/post-04-disconnect-splite-database.png)
+
+Use dj-databse-url to connect.
+
+![Sdj-databse-url connection](docs/local_deployment/post-05-dj-databse-url.png)
