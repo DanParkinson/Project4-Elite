@@ -19,6 +19,15 @@ To install, type *pip3 install Django~=4.2.1* into the Gitpod terminal.
 
 Use command *pip3 freeze --local > requirements.txt* to create requirements.txt and add relavent packages to it. 
 
+## Install gunicorn
+
+To install, type *pip3 install gunicorn~=20.1* into the Gitpod terminal.
+
+Use command *pip3 freeze --local > requirements.txt* to create requirements.txt and add relavent packages to it.
+
+
+![Gunicorn installed](docs/heroku_deployment/hd-03-gunicorn-install.png)
+
 # Create Django Project
 
 Using the command *django-admin startproject elite-cuisine* creates our django project
@@ -42,5 +51,37 @@ In the terminal, type *python3 manage.py runserver* to verify local deployment. 
 In the terminal, type *python3 manage.py startapp home* to create out homepage app.
 
 ![Home app created](docs/local_deployment/ca-01-create-home-app.png)
+
+# Deploy to Heroku 
+
+Navigate to your Heroku dashboard and create a new Heroku app
+
+![Create Heroku App](docs/heroku_deployment/hd-01-create-app.png)
+
+Add *DISABLE_COLLECTSTATIC* with a Value of 1 to stop Heroku uploading static files
+
+![Edit Config Vars](docs/heroku_deployment/hd-02-config-vars.png)
+
+Create a Procfile to allow Heroku to deploy using Gunicorn
+
+![Created Procfile](docs/heroku_deployment/hd-04-procfile.png)
+
+Add Heroku to allowed hosts in elite_cuisine/settings.py
+
+![Append Heroku to Allowed Hosts](docs/heroku_deployment/hd-05-allowed-hosts.png)
+
+Connect Heroku to your Github account
+
+![Connect Heroku to Github](docs/heroku_deployment/hd-06-heroku-github.png)
+
+Click deploy branch and wait for completion
+
+![Deploy Branch](docs/heroku_deployment/hd-07-deploy-branch.png)
+
+Add Eco Dynos
+
+![Add Eco Dynos](docs/heroku_deployment/hd-07-eco-dynos.png)
+
+
 
 
