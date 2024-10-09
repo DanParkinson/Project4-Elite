@@ -32,3 +32,4 @@ Focus here is to do with setting up templates to have a view of the home page.
 - Setup index page in home app
 - Build navigation
 
+At this point I was able to deploy to Heroku. I have my templates made for fututre web pages. It is time to build some models. 
