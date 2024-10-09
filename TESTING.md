@@ -27,6 +27,8 @@ Use command *python3 manage.py runserver* to check the home app is linked correc
 
 ![Succesful server](docs/testing/ca-04-succesful-server.png)
 
+### Creating templates
+
 Update the *home/views.py* file.
 
 ![Updated home/views.py](docs/testing/temp-01-home-views.png)
@@ -54,3 +56,5 @@ After creating the base.html, partial htmls and index.html in the templates dire
 ![templates directory](docs/testing/temp-07-templates.png)
 
 ![Server showing index.html](docs/testing/temp-08-basehtml-works.png)
+
+### CSS and JS

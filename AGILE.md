@@ -31,3 +31,4 @@ Focus here is to do with setting up templates to have a view of the home page.
 - create separate components for site such as head, header, navbar, footer in a subfolder to inject into base.html
 - Setup index page in home app
 - Build navigation
+
