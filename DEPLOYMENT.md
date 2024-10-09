@@ -135,3 +135,19 @@ Deploy a new branch in Heroku.
 Create a new convig-var using the name DATABASE-URL and a value of your postgreSQL. This connects Heroku to the postgreSQL.
 
 ![Convig-var postgreSQL](docs/local_deployment/post-08-config-vars-postgresql.png)
+
+# Secret Key
+
+Generate a secret key using letters, numbers and symbols that is hard to guess. This is used to keep information private.
+Add it to the env.py file with the following code.
+
+![secret key in env](docs/local_deployment/sk-01-env.png)
+
+Update the settings.py file.
+
+![secret key in settings.py](docs/local_deployment/sk-02-settings.png)
+
+Add secret key as a config-var to Heroku. The name should be SECRET_KEY. The value should be your secret key value. 
+
+If done correctly, both local and Heroku deployment should work.
+
