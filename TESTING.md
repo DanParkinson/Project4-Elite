@@ -57,4 +57,19 @@ After creating the base.html, partial htmls and index.html in the templates dire
 
 ![Server showing index.html](docs/testing/temp-08-basehtml-works.png)
 
+### superuser 
+
+When i originally tried to login as a superuser i recieved this error.
+
+![admin error 403](docs/testing/adminlogin-01-error-403.png)
+
+After using code institute support i had forgotten to add.
+
+![CSRF_trusted_Origins](docs/testing/adminlogin-02.png)
+
+Admin login now functions correctly.
+
+![admin access](docs/testing/adminlogin-03.png)
+
 ### CSS and JS
+
