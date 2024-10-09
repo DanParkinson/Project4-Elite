@@ -28,6 +28,14 @@ Use command *pip3 freeze --local > requirements.txt* to create requirements.txt 
 
 ![Gunicorn installed](docs/heroku_deployment/hd-03-gunicorn-install.png)
 
+## Install Whitenoise
+
+To install, type *pip3 install whitenoise~=6.5.0* into the Gitpod terminal.
+
+Use command *pip3 freeze --local > requirements.txt* to create requirements.txt and add relavent packages to it.
+
+![Whitenoise installed](docs/heroku_deployment/hd-09-whitenoise.png)
+
 # Create Django Project
 
 Using the command *django-admin startproject elite-cuisine* creates our django project
@@ -80,7 +88,7 @@ Click deploy branch and wait for completion
 
 Add Eco Dynos
 
-![Add Eco Dynos](docs/heroku_deployment/hd-07-eco-dynos.png)
+![Add Eco Dynos](docs/heroku_deployment/hd-08-eco-dynos.png)
 
 
 
