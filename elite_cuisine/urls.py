@@ -19,7 +19,7 @@ from django.urls import path, include
 from home import views as index_views
 
 urlpatterns = [
-    path('', index_views.index, name='index'), # Include home app URLs
-    path('accounts/', include('django.contrib.auth.urls')), #Authentication URLS
-    path('admin/', admin.site.urls),
+    path('', index_views.index, name='index'), # Home page
+    path('admin/', admin.site.urls), # Admin
+    path('registration/', index_views.registration, name='registration') # registration
 ]
