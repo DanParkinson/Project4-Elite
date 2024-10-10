@@ -6,10 +6,14 @@ A variety of exploratory tests were performed throughout the project.
 
 1. Getting the live deployed site working. This is well documented in the latter sections of [DEPLOYMENT.md](DEPLOYMENT.md)
 
-2. Checking the deployed site opens on the homepage.
-- create a function based view in home
-- create a path in the url file in the home app
-- reference the home app url in the main project url file
+<details>
+<summary>template</summary>
+</details>
+
+## Checking server shows homepage
+
+<details>
+<summary> # Checking server deploys homepage</summary>
 
 Add the following code to the *home/views.py* file. This tells the server to display "This is the homepage"
 
@@ -27,7 +31,12 @@ Use command *python3 manage.py runserver* to check the home app is linked correc
 
 ![Succesful server](docs/testing/ca-04-succesful-server.png)
 
-### Creating templates
+</details>
+
+## Creating templates
+
+<details>
+<summary> # creating templates</summary>
 
 Update the *home/views.py* file.
 
@@ -57,7 +66,12 @@ After creating the base.html, partial htmls and index.html in the templates dire
 
 ![Server showing index.html](docs/testing/temp-08-basehtml-works.png)
 
-### superuser 
+</details>
+
+## superuser 
+
+<details>
+<summary> # super user</summary>
 
 When i originally tried to login as a superuser i recieved this error.
 
@@ -71,9 +85,19 @@ Admin login now functions correctly.
 
 ![admin access](docs/testing/adminlogin-03.png)
 
-### CSS and JS
+</details>
 
-### Django auth function 
+## CSS and JS
+
+<details>
+<summary> # CSS and JS</summary>
+</details>
+
+## Registration
+
+<details>
+<summary> # Registration</summary>
+
 
 Django includes a built in authentication system to register, login and log out of accounts. In *elite_cuisine/urls.py* add the url link to load auth package.
 
@@ -101,7 +125,7 @@ When creating the registration process I had saved the registration.html in the 
 
 When checking if the inputs worked. I tried to enter incomplete registrations to see feedback messages. 
 
-#### working
+### working
 
 - Already taken username
 
@@ -119,7 +143,8 @@ When checking if the inputs worked. I tried to enter incomplete registrations to
 
 ![Passwords dont match error message](docs/testing/reg-feedback-04-passwords-dont-match.png)
 
-#### not working 
+### not working 
+
 - Phone number not numbers 
 
 Using djangos built in validators the phone number now has to be numerical.
@@ -129,3 +154,5 @@ Using djangos built in validators the phone number now has to be numerical.
 - Already taken email
 
 After searching for a solution, comments onforums state that it could be detrimental as hackers can abuse this information if provided to them. Left out for the time being unless there is a safe way.  
+
+</details>
