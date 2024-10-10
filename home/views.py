@@ -16,7 +16,7 @@ def registration(request):
         if form.is_valid():
             user = form.save() # saves user to the database
             login(request,user) # log in the user after registration
-            messages.success(request, 'Registration successful')
+            messages.success(request, 'Registration successful. You are now logged in.')
             return redirect("index") # Redirects to the homepage if succesful
     else:
         form = SignUpForm() # The user wants to sign up so this loads the form
