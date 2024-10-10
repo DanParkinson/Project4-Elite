@@ -95,7 +95,37 @@ Appending */accounts/login* or */accounts/logout* to the server URL should load 
 
 Now that they load I need to create a registration from for users to log into
 
-When creating the registration process I had saved the registration.html in the incorrect location. teh registration form now appears when /regisitration is appeneded to the servers URL.
+When creating the registration process I had saved the registration.html in the incorrect location. the registration form now appears when /regisitration is appeneded to the servers URL.
 
 ![Registration form showing on webpage](docs/testing/registration-02-form-in-url.png)
 
+When checking if the inputs worked. I tried to enter incomplete registrations to see feedback messages. 
+
+#### working
+
+- Already taken username
+
+![Username already exists error message](docs/testing/reg-feedback-01-username-taken.png)
+
+- Incorrect email
+
+![email error message](docs/testing/reg-feedback-02-email-incorrect.png)
+
+- Password to similar to name
+
+![password to common error message](docs/testing/reg-feedback-03-password-common.png)
+
+- Passwords dont match 
+
+![Passwords dont match error message](docs/testing/reg-feedback-04-passwords-dont-match.png)
+
+#### not working 
+- Phone number not numbers 
+
+Using djangos built in validators the phone number now has to be numerical.
+
+![Phone number has to be numbers error message](docs/testing/reg-feedback-05-phone-numbers-validation.png)
+
+- Already taken email
+
+After searching for a solution, comments onforums state that it could be detrimental as hackers can abuse this information if provided to them. Left out for the time being unless there is a safe way.  

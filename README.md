@@ -205,4 +205,6 @@ https://www.youtube.com/watch?v=tUqUdu0Sjyc
 
 https://docs.djangoproject.com/en/5.1/topics/auth/default/
 
+https://docs.djangoproject.com/en/3.0/ref/validators/
+
 [Back to top](#README)
