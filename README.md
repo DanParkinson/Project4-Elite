@@ -207,4 +207,6 @@ https://docs.djangoproject.com/en/5.1/topics/auth/default/
 
 https://docs.djangoproject.com/en/3.0/ref/validators/
 
+https://stackoverflow.com/questions/60246268/how-to-display-django-success-message-in-every-template-from-one-view
+
 [Back to top](#README)

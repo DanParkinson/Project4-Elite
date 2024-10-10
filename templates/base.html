@@ -4,6 +4,15 @@
     {% include 'partials/head.html' %}
 </head>
 <body>
+    <!-- displays register/login/logout messages-->
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
     <header>
     {% include 'partials/header.html' %}
     {% include 'partials/nav.html' %}

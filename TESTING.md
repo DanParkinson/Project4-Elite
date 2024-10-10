@@ -155,4 +155,10 @@ Using djangos built in validators the phone number now has to be numerical.
 
 After searching for a solution, comments onforums state that it could be detrimental as hackers can abuse this information if provided to them. Left out for the time being unless there is a safe way.  
 
+### registration/login message
+
+The message to confirm registration was not appearing to adjustments had to be made to the base.html to show the message. 
+
+![Registration message shown on webpage](docs/testing/reg-feedback-06-registration-message.png)
+
 </details>
