@@ -199,4 +199,10 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## Acknowledgements
 
+https://www.geeksforgeeks.org/form-as_p-render-django-forms-as-paragraph/
+
+https://www.youtube.com/watch?v=tUqUdu0Sjyc
+
+https://docs.djangoproject.com/en/5.1/topics/auth/default/
+
 [Back to top](#README)

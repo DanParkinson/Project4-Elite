@@ -12,7 +12,7 @@ def index(request):
 # handles registration process for POST, GET and ERRORS
 def registration(request):
     if request.method == 'POST': # if form is submitted
-        form = SignUpForm(request.POST) # users form in home/forms.py
+        form = SignUpForm(request.POST) # uses form in home/forms.py
         if form.is_valid():
             user = form.save() # saves user to the database
             login(request,user) # log in the user after registration
