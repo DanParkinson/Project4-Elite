@@ -95,3 +95,5 @@ Appending */accounts/login* or */accounts/logout* to the server URL should load 
 
 Now that they load I need to create a registration from for users to log into
 
+Before I make the form I need to create the view for the form to be loaded in. 
+
