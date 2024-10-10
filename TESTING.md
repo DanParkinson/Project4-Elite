@@ -73,3 +73,25 @@ Admin login now functions correctly.
 
 ### CSS and JS
 
+### Django auth function 
+
+Django includes a built in authentication system to register, login and log out of accounts. In *elite_cuisine/urls.py* add the url link to load auth package.
+
+'''
+
+path('accounts/', include('django.contrib.auth.urls')), #Authentication URLS
+
+'''
+
+Appending */accounts/login* or */accounts/logout* to the server URL should load a page. 
+
+*/accounts/login* gives an error saying no template present. Thats because it needs to be created.
+
+![login message](docs/testing/auth-01-login-error.png)
+
+*/accounts/logout* provides this:
+
+![logout message](docs/testing/auth-02-logout.png)
+
+Now that they load I need to create a registration from for users to log into
+
