@@ -36,3 +36,13 @@ At this point I was able to deploy to Heroku. I have my templates made for futut
 
 ## Phase 3
 
+I want to create a way for users to create accounts, login and logout. Django provides a built in users function which I will use. 
+
+- users can register using a form
+- when registered users are directed to login page
+- users can log in
+- home page confirms login 
+- users can log out
+- when logging out users are redirected to the log in page
+- navbar needs editing to include these
+- 
