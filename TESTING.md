@@ -95,5 +95,7 @@ Appending */accounts/login* or */accounts/logout* to the server URL should load 
 
 Now that they load I need to create a registration from for users to log into
 
-Before I make the form I need to create the view for the form to be loaded in. 
+When creating the registration process I had saved the registration.html in the incorrect location. teh registration form now appears when /regisitration is appeneded to the servers URL.
+
+![Registration form showing on webpage](docs/testing/registration-02-form-in-url.png)
 
