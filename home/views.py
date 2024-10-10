@@ -21,4 +21,4 @@ def registration(request):
     else:
         form = SignUpForm() # The user wants to sign up so this loads the form
 
-    return render(request, 'registration/register.html', {"form": form}) # loads the form
+    return render(request, 'home/registration.html', {"form": form}) # loads the form
